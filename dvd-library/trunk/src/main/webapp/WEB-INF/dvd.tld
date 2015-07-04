@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+	version="2.1">
+	<description>
+    	This tag library contains tag extensions for the dvd library app
+	</description>
+	<tlib-version>1.0</tlib-version>
+	<short-name>dvd</short-name>
+
+	<tag>
+		<description>
+			Displays all the status/informational/validation/error messages, and then clears the messages.
+			Only displays messages of the given type, defaulting to non-email build-related messages.
+		</description>
+		<name>messages</name>
+		<tag-class>edu.umd.dvdlibrary.message.MessageTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<description>
+				Type of message to display, either "build" or "normal". Defaults to "normal".
+			</description>
+			<name>type</name>
+			<required>no</required>
+			<rtexprvalue>no</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>

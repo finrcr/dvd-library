@@ -1,0 +1,13 @@
+<div id="navbar">
+	<div class="container">
+		<a class="brand" href="/dvd">DVD</a>
+		<ul>
+			<li><a href="/dvd/secure" id="home">Home</a></li>
+			<li><a href="/dvd/secure/studentRecords" id="student">Students</a></li>
+			<li><a href="/dvd/secure/departmentRecords" id="departments">Departments</a></li>
+			<li><a href="/dvd/secure/universityRecords" id="university">University</a></li>
+			<li><a href="/dvd/secure/calendar" id="calendar">Calendar</a></li>
+		</ul>
+		<a href="/dvd/logout" class="logout">Logout</a>
+	</div>
+</div>

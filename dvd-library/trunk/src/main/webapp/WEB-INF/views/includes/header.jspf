@@ -1,0 +1,33 @@
+<script src="//s3.amazonaws.com/umdheader.umd.edu/app/js/main.min.js"></script>
+<script> umdHeader.init(); </script>
+<div id="site_container">
+	<div id="main_container">
+		<div id="title-bar" style="text-align: left">
+			<a href="http://www.umd.edu/"><img src="/dvd/resources/images/umd_logo.png" alt="University of Maryland" /></a>
+			<span id="avail-text">
+				Version ${version} <span title="Newer builds have higher build numbers.">build
+					${buildNumber}</span><br> 
+			</span>
+		</div>
+		<%--
+		<div id="header_container">
+			<a href="http://www.umd.edu/"><img src="/dvd/resources/images/umd_logo.png" alt="University of Maryland" /></a>
+			
+			<div id="header_search_text">
+				<form method="get" action="http://www.searchum.umd.edu/search">
+					<input type="hidden" name="site" value="UMCP"/>
+		        	<input type="hidden" name="client" value="UMCP"/>
+		        	<input type="hidden" name="proxystylesheet" value="UMCP"/>
+		        	<input type="hidden" name="output" value="xml_no_dtd"/>
+
+					<input type="text" name="q" size="15" class="search_box"/><input type="submit" value="" class="search_submit"/>
+			
+					<!-- <div class="radio">
+						<label><input type="radio" name="as_oq" value="site:http://www.financialaid.umd.edu" checked="checked" /> OSFA </label>
+						<label><input type="radio" name="as_oq" value="" /> UMD </label>
+					</div> -->
+				</form>
+			</div>
+		</div> --%>
+		
+		<div id="body_container">

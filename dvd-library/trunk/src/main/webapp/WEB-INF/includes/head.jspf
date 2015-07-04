@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+
+<link href="/dvd/resources/css/style.css" rel="stylesheet">
+<link href="/dvd/resources/css/bootstrap.min.css" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="/dvd/resources/js/bootstrap.min.js"></script>
+
+<!-- override bootstrap default white background -->
+<style type="text/css">
+   body { background: black; }
+</style>
+

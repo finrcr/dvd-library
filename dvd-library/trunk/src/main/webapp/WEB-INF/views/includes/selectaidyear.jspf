@@ -1,0 +1,12 @@
+				<form:select path="selectedAidYear" id="aidyear">
+					<c:forEach items="${aidYears}" var="year">
+						<c:choose>
+							<c:when test = "${selectedAidYear == year.key}">
+								<form:option value="${year.key}" selected = "selected">${year.value}</form:option>
+							</c:when>
+							<c:otherwise>
+								<form:option value="${year.key}">${year.value}</form:option>
+							</c:otherwise>
+						</c:choose>
+					</c:forEach>
+				</form:select>
