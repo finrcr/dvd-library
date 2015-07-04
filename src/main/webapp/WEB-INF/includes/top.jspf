@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" 
+	pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
+
+<html>
+
+<jsp:useBean id="now" class="java.util.Date" />
+
+<head>
+
+<%@ include file="/WEB-INF/includes/CommonIncludes.jspf" %>
+
+<c:set var="base" value="${pageContext.request.contextPath}" />
+
+<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.3/jquery.dataTables.min.js"></script>
+<%-- <script type="text/javascript" src="${base}/resources/javascript/reviewAccess.js"></script> --%>
+<script type="text/javascript" src="${base}/resources/javascript/dvd.js"></script>
+<script type="text/javascript" src="${base}/resources/javascript/spin.min.js"></script>
+<script type="text/javascript" src="${base}/resources/javascript/jquery.fileDownload.min.js"></script>
+
+<script>
+  $(function() {
+    $(".datepicker").datepicker();
+  });
+</script>
+
+<link rel="stylesheet" type="text/css" href="//ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.3/css/jquery.dataTables_themeroller.css" media="all" />
+<link rel="stylesheet" type="text/css" href="${base}/resources/css/Reviewer.css"/>
+
+<title>>DVD Library Web Application | ${_version} </title>
+
+<!-- [if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+ <![endif]-->
+ 
+</head>
+
+<body>
+
+<div id="overlay"> <span id="spinner"></span> </div>
+
+<div class="umd-frame">
+
+<%@ include file="/WEB-INF/includes/CommonHeader.jspf" %>
+
+
+<%-- Body Cont Starts here --%>
+
+<table id="mainFrame" >
+<!--     <tr> -->
+<!--     	<th class="headingSmall" colspan="2"> -->
+<!--     		<span class="title" style="float:left;">Office of Student Financial Aid</span> -->
+<!--     		<span style="float: right;">  -->
+<!--     			<button id="logoffBtn">Logoff</button> -->
+<!--             </span> -->
+<!--     	</th> -->
+<!--     </tr> -->
+ 
+	<tr>
+		<td colspan="2" >
+			<nav id="tabs" class="ui-tabs ui-widget-content ui-corner-all ui-widget">
+				<ul class="ui-widget-header ui-corner-all ui-tabs-nav ui-helper-reset ui-helper-clearfix">
+					<li class="ui-state-default ui-corner-top"><a href="${base}/dvds/">Home</a></li>
+					<li class="ui-state-default ui-corner-top"><a href="${base}/dvds/list">List Dvds</a></li>
+					<li class="ui-state-default ui-corner-top"><a href="${base}/dvds/create">Create Dvd</a></li>
+					<li class="ui-state-default ui-corner-top"><a href="${base}/dvds/update">Update Dvd</a></li>
+					<li class="ui-state-default ui-corner-top"><a href="${base}/dvds/delete">Delete Dvd</a></li>
+				</ul>
+		 	</nav>
+		 	
+		 	<dvd:messages />
+		</td>
+	</tr>
+	

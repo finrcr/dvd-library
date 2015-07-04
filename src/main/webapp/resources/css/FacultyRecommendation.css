@@ -1,0 +1,53 @@
+p#firstP {
+	text-align: right;
+}
+
+h2 {
+	text-align: center;
+}
+
+td#mainBody label {
+	width: 25%;
+	float: left;
+}
+
+hr {
+	background-color: black;
+	border: 1px solid;
+}
+
+.ul {
+	text-decoration: underline;
+}
+
+span.rating {
+	margin-left: 2em;	
+}
+.bold {
+	font-weight: bold;
+}
+
+.italics {
+	font-style: italic;
+}
+span#phone {
+	margin-right: 2.3em;
+	margin-left: 7.6em;
+}
+span#title {
+	margin-right: 2.3em;
+}
+.center {
+	text-align: center;
+}
+select {
+	margin-left: 25px;
+}
+ p.scale input[type="radio"] {margin:0 0 0 4%;} 
+p.scale span {
+	float: left;
+	width: 25%;
+}
+td#mainBody {
+	text-align: left;
+}

@@ -1,0 +1,32 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<%-- Required Imports --%>
+<%@ page import ="java.util.*" %>
+<%@ page import ="java.text.*" %>
+<%@ page import ="edu.umd.dvdlibrary.web.*" %>
+<%@ page import="edu.umd.dvdlibrary.model.entity.*" %>
+<%@ page import="edu.umd.dvdlibrary.message.*" %>
+<%@ page import="edu.umd.dvdlibrary.service.*" %> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+<%@ taglib uri="/WEB-INF/dvd.tld" prefix="dvd" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+
+<c:set var="base" value="${pageContext.request.contextPath}" />
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<%-- <script type="text/javascript" src="${base}/resources/javascript/SFAPackageJavaScript.js"></script> --%>
+<script type="text/javascript" src="${base}/resources/javascript/top-menu.js"></script>
+
+<script src="//s3.amazonaws.com/umdheader.umd.edu/app/js/main.min.js"></script>
+<script> umdHeader.init(); </script>
+
+<link rel="stylesheet" type="text/css" href="${base}/resources/css/standard.css" media="all" />
+<link rel="stylesheet" type="text/css" href="${base}/resources/css/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="${base}/resources/css/umd-wrapper.css" media="all" />
+<link rel="stylesheet" type="text/css" href="${base}/resources/css/jquery-ui-1.8.22.custom.css" />
+
+<!-- for title font -->
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu">
+	 

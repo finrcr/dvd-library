@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+   "-//Hibernate/Hibernate Mapping DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+    <class name="edu.umd.dvdlibrary.model.entity.Dvd" table="dvd">
+        <id name="id" column="id" type="int" />
+        <property name="name" type="string" not-null="true" column="name" />
+        <property name="columne" type="int" not-null="false" column="coloana" />
+        <property name="rowe" type="int" not-null="false" column="linie" />
+        <property name="director" type="string" not-null="false" column="director" />
+        <property name="genre" type="string" not-null="false" column="genre" />
+    </class>
+</hibernate-mapping>     

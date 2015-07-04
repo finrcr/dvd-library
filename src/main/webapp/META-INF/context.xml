@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context debug="1" reloadable="true">
+
+<Resource
+      name="jdbc/DVDTable"
+      auth="Container"
+      type="javax.sql.DataSource"
+      driverClassName="com.mysql.jdbc.Driver"
+      url="jdbc:mysql://127.0.0.1:3306/dvds"   
+      username="root"
+      password="Asha$4567"
+      maxActive="20"
+      maxIdle="10"
+      maxWait="-1"/>
+
+</Context>

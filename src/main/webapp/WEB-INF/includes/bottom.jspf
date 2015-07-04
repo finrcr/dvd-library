@@ -1,0 +1,23 @@
+<tr class="blank">
+  		<td colspan="2"> </td>
+  	</tr>
+  
+	<%@ include file="/WEB-INF/includes/CommonFooter.jspf" %>
+  
+</table><!-- Body cont ends here: end mainFrame --> 
+
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$('input[type=button], input[type=submit], button').button();
+	
+	$('#logoffBtn').click(function() {
+		window.location = "/osfa-audit/logout";
+	});
+	
+});
+</script>
+
+</body><!-- End umd-frame -->
+</html>

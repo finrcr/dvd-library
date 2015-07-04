@@ -1,0 +1,134 @@
+@CHARSET "ISO-8859-1";
+p#first {
+	text-align: right;
+}
+
+h2, h4 { 
+	text-align: center;
+}
+
+h4 {
+	text-decoration: underline;
+	width: 100%;
+/*	background-color: gray; */
+	margin-top: 0;
+}
+hr {
+/*	background-color: black;
+	height: .3em;
+	margin-bottom: 0;
+*/
+}
+
+.ul {
+	text-decoration: underline;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+div#q21, div.appSection {
+	margin-left: 2%;
+}
+
+
+thead {
+	text-align: center;
+}
+
+td#pn {	width: 40%;}
+td#yp { width: 20%;}
+td#ra { width:40%;}
+
+table#summerPrograms input, table#q33 input {
+	width: 90%;
+}
+
+table#gradSchools input {
+	width: 95%;
+}
+
+td#pn33 {width: 70%;}
+td#yp33 {width: 30%;}
+
+table#gradSchools {
+	width: 90%;
+	margin-top: 2%;
+}
+table#gradSchools thead {
+	background-color: #bfbebe;
+	text-align: left;
+}
+
+table#gradSchools thead #letter {
+	background-color: white;
+}
+table#gradSchools td {
+    border-width: 2px;
+}
+td#gradSchoolsU {width: 40%;}
+td#gradSchoolsD {width: 30%;}
+td#gradSchoolsP {width: 30%;}
+
+input[type="submit"] {
+	margin-left: 35%;
+	margin-right: 20%;
+}
+
+input#finalApp {
+	margin-left: 15%;
+	margin-right: 17%;
+}
+table#mainFrame {
+	text-align: left;
+}
+
+span#next {
+	float: right;
+}
+
+span#previous {
+	margin-left: 12%;
+}
+span#save {
+	margin-left: 15%;
+}
+
+span.depts select {
+	width: 25%;
+}
+span.faculty {
+	
+}
+
+select.chooseD {
+	margin-right: 10%;
+}
+p#warning {
+	text-align: center;
+}
+
+label.majors {
+	display:inline-block; 
+	width: 6em;
+}
+
+/* ***************** testing */
+.text-label {
+    color: #887e78;
+    font-weight: bold;
+}
+
+#info p {
+	text-align: left;
+	font-size: .8em;
+}
+
+.ui-dialog .ui-dialog-title {
+	float: none;
+}
+
+.ui-dialog {
+	font-size: 82.5%;
+}

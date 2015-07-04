@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xsi:schemaLocation="http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.1.xsd
+		http://www.springframework.org/schema/data/jpa
+		http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+    <context:annotation-config/>
+	    
+	<jee:jndi-lookup id="dvdDataSource" jndi-name="jdbc/DVDTable" />
+	    
+    <bean id="dvdEntityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+	      p:dataSource-ref="dvdDataSource"
+	      p:packagesToScan="edu.umd.dvdlibrary.model.entity, edu.umd.dvdlibrary.service, edu.umd.dvdlibrary.web">
+	      
+	      <property name="persistenceUnitName" value="dvdUnit" />
+	      
+	      <property name="persistenceProvider">
+	      		<bean class="org.hibernate.ejb.HibernatePersistence" />
+	      </property>
+	      
+	      <property name="jpaProperties">
+	      	<props>
+	      		<prop key="hibernate.jdbc.use_get_generated_keys"> true </prop>
+       			<prop key="hibernate.show_sql"> false</prop>
+      			<prop key="hibernate.format_sql">false</prop>
+       			<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>
+       			<prop key="hibernate.id.new_generator_mappings">true</prop>
+	      	</props>
+	      </property>
+	</bean>
+	
+	<bean id="dvdTransactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"
+		  p:entityManagerFactory-ref="dvdEntityManagerFactory" />
+
+	<jpa:repositories base-package="edu.umd.dvdlibrary.repository" 
+		entity-manager-factory-ref="dvdEntityManagerFactory" 
+		transaction-manager-ref="dvdTransactionManager"/>
+</beans>

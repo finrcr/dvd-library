@@ -1,0 +1,11 @@
+.statusTable{
+	width: 90%;
+}
+.leftColumn{
+	text-align: left;
+	width: 60%;
+}
+.rightColumn{
+	text-align: right;
+	width: 40%;
+}
