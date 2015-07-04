@@ -4,7 +4,7 @@
 	<artifactId>dvd-library</artifactId>
 	<name>vd-library Maven Webapp</name>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	
 	<properties>
    		<build-number>101</build-number>
